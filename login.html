@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EYESON — Sign In</title>
+  <meta name="description" content="EYESON — premium luxury fashion. Designed for those who lead, not follow."/>
+  <link rel="icon" href="images/logo/logo.png"/>
+  <link rel="stylesheet" href="css/theme.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/style.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/header.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/footer.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/components.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/pages.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/animations.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/responsive.css?v=20260816-15"/>
+</head>
+<body data-page="login">
+  <div id="header"></div>
+<!-- ================= LOGIN PAGE ================= -->
+<div class="auth-wrap">
+  <div class="auth-card">
+    <!-- Official EYESON logo -->
+    <span class="logo-dual auth-logo">
+        <img class="lg-black" src="images/logo/logo-black.png" alt="EYESON" onerror="this.parentElement.innerHTML='<span class=&quot;logo-fallback&quot;>EYESON</span>'"/>
+        <img class="lg-white" src="images/logo/logo-white.png" alt=""/>
+      </span>
+    <h2 class="headline-md" style="font-size:1.6rem">WELCOME BACK</h2>
+    <p class="text-soft">Designed for those who lead, not follow.</p>
+    <form id="loginForm">
+      <div class="field"><label>Email</label><input type="email" id="loginEmail" required placeholder="you@example.com"/></div>
+      <div class="field"><label>Password</label><input type="password" id="loginPass" required minlength="4" placeholder="••••••••"/></div>
+      <!-- Login button -->
+      <button class="btn btn-solid" type="submit" style="width:100%">Sign In</button>
+    </form>
+    <p class="auth-alt">New to EYESON? <a href="register.html">Create an account</a></p>
+  </div>
+</div>
+<script>
+  /* Client-side sign-in for the demo store (no backend required) */
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    eyesonLogin(document.getElementById("loginEmail").value, null);
+  });
+</script>
+  <div id="footer"></div>
+  <script src="js/data.js?v=20260816-15"></script>
+  <script src="js/utils.js?v=20260816-15"></script>
+  <script src="js/components.js?v=20260816-15"></script>
+  <script src="js/theme.js?v=20260816-15"></script>
+  <script src="js/cart.js?v=20260816-15"></script>
+  <script src="js/wishlist.js?v=20260816-15"></script>
+  <script src="js/search.js?v=20260816-15"></script>
+  <script src="js/loading.js?v=20260816-15"></script>
+  <script src="js/animations.js?v=20260816-15"></script>
+  <script src="js/carousel.js?v=20260816-15"></script>
+  <script src="js/main.js?v=20260816-15"></script>
+</body>
+</html>

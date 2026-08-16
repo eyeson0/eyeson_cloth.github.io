@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EYESON — Create Account</title>
+  <meta name="description" content="EYESON — premium luxury fashion. Designed for those who lead, not follow."/>
+  <link rel="icon" href="images/logo/logo.png"/>
+  <link rel="stylesheet" href="css/theme.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/style.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/header.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/footer.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/components.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/pages.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/animations.css?v=20260816-15"/>
+  <link rel="stylesheet" href="css/responsive.css?v=20260816-15"/>
+</head>
+<body data-page="register">
+  <div id="header"></div>
+<!-- ================= REGISTER PAGE ================= -->
+<div class="auth-wrap">
+  <div class="auth-card">
+    <span class="logo-dual auth-logo">
+        <img class="lg-black" src="images/logo/logo-black.png" alt="EYESON" onerror="this.parentElement.innerHTML='<span class=&quot;logo-fallback&quot;>EYESON</span>'"/>
+        <img class="lg-white" src="images/logo/logo-white.png" alt=""/>
+      </span>
+    <h2 class="headline-md" style="font-size:1.6rem">JOIN THE VISION</h2>
+    <p class="text-soft">Create your EYESON account.</p>
+    <form id="regForm">
+      <div class="field"><label>Full Name</label><input type="text" id="regName" required placeholder="Your name"/></div>
+      <div class="field"><label>Email</label><input type="email" id="regEmail" required placeholder="you@example.com"/></div>
+      <div class="field"><label>Password</label><input type="password" id="regPass" required minlength="4" placeholder="••••••••"/></div>
+      <!-- Register button -->
+      <button class="btn btn-solid" type="submit" style="width:100%">Create Account</button>
+    </form>
+    <p class="auth-alt">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</div>
+<script>
+  /* Store the new user locally and enter the account area */
+  document.getElementById("regForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    eyesonLogin(document.getElementById("regEmail").value, document.getElementById("regName").value);
+  });
+</script>
+  <div id="footer"></div>
+  <script src="js/data.js?v=20260816-15"></script>
+  <script src="js/utils.js?v=20260816-15"></script>
+  <script src="js/components.js?v=20260816-15"></script>
+  <script src="js/theme.js?v=20260816-15"></script>
+  <script src="js/cart.js?v=20260816-15"></script>
+  <script src="js/wishlist.js?v=20260816-15"></script>
+  <script src="js/search.js?v=20260816-15"></script>
+  <script src="js/loading.js?v=20260816-15"></script>
+  <script src="js/animations.js?v=20260816-15"></script>
+  <script src="js/carousel.js?v=20260816-15"></script>
+  <script src="js/main.js?v=20260816-15"></script>
+</body>
+</html>
